@@ -15,17 +15,29 @@
             "description": "Get from my.telegram.org/apps",
             "required": true
         },
-        "SESSION_NAME": {
+        "BOT_TOKEN": {
             "description": "A valid Pyrogram session name",
             "required": true
         },
-        "TIME_ZONE": {
+        "HEROKU_API_KEY": {
             "description": "Your time zone (Example: Asia/Kolkata)",
             "required": true
+        },
+        "AUTHORIZED_USERS": {
+        "description": "for user in os.environ.get",
+        "required": true
+        },
+        "HEROKU_APP_NAME": {
+        "description": "for",
+        "required": true
+        },
+        "TG_CHARACTER_LIMIT":{
+        "description": "hello",
+        "required": true
         }
     },
     "formation": {
-    "worker": {
+    "worker": {                
       "quantity": 1,
       "size": "free"
     }
