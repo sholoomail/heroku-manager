@@ -1,0 +1,38 @@
+{
+    "name": "Heroku manager bot",
+    "description": "Powerful Telegram Heroku manager bot.",
+    "repository": "https://github.com/Doctorstra/heroku-manager",
+    "keywords": [
+        "Heroku manager bot",
+        
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "SESSION_NAME": {
+            "description": "A valid Pyrogram session name",
+            "required": true
+        },
+        "TIME_ZONE": {
+            "description": "Your time zone (Example: Asia/Kolkata)",
+            "required": true
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
